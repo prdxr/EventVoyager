@@ -15,7 +15,7 @@ from loader import dp, bot
 from states.EventStatesGroup import EventStatesGroup
 from utils.create_events_response import create_new_events_response
 
-PAGE_SIZE = os.getenv("EVENTS_PAGE_SISE")
+PAGE_SIZE = os.getenv("EVENTS_PAGE_SIZE")
 PAGE_SIZE = int(PAGE_SIZE) if PAGE_SIZE is not None else 5
 API_BASE_URL = os.getenv("API_BASE_URL")
 headers = {

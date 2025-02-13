@@ -27,7 +27,7 @@ headers = {
     "Authorization": f"Token {token}"
 }
 pref_page_size = int(os.getenv("PREF_PAGE_SIZE"))
-events_page_size = int(os.getenv("EVENTS_PAGE_SISE"))
+events_page_size = int(os.getenv("EVENTS_PAGE_SIZE"))
 
 async def __get_profile_text(user):
     event_types = await get_events_types()
