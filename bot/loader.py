@@ -7,7 +7,6 @@ from aiogram.contrib.fsm_storage.redis import RedisStorage2
 
 BASE_DIR = Path(__file__).parent.resolve()
 
-from login import get_token
 import logging.config
 
 
@@ -59,6 +58,9 @@ if ADMINS_IDS is not None:
     admins = [admin for admin in admins if admin != ""]
 
 django_start = False
+
+from login import get_token
+
 
 while django_start is False:
     try:
